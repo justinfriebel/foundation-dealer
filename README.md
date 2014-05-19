@@ -25,10 +25,6 @@ While you're working on your project, run:
 
 And you're set!
 
-Check for Foundation Updates? Run:
-`foundation update` 
-(this requires the foundation gem to be installed in order to work. Please see the [docs](http://foundation.zurb.com/docs/sass.html) for details.)
-
 
 ## Stylesheet Folder Structure
 
@@ -57,3 +53,7 @@ Check for Foundation Updates? Run:
 ## Learn how to use WordPress
 
 * [WordPress Codex](http://codex.wordpress.org/)
+
+##Check for Foundation Updates? Run:
+`foundation update` 
+(this requires the foundation gem to be installed in order to work. Please see the [docs](http://foundation.zurb.com/docs/sass.html) for details.)
