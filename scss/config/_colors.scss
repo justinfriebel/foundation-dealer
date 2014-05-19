@@ -1,0 +1,129 @@
+/**
+ * Custom color scheme
+ * ----------------------------------------------------------------------------
+ */
+
+body {
+  background: $body-bg;
+  color: $body-text;
+}
+
+a:link,
+a:visited {
+	color: $link;
+}
+a:hover,
+a:focus {
+	color: $link-hover;
+}
+
+.button {
+	background-color: $btn;
+	border-color: $btn-border;
+	transition: background-color 300ms ease-out;
+	color: $btn-color;
+}
+.button:hover {
+	background-color: $btn-hover;
+	border-color: $btn-border;
+	transition: background-color 300ms ease-out;
+}
+a.button {
+	color: $btn-color;
+}
+
+ul.pagination li.current a {
+  background: $btn;
+}
+ul.pagination li.current a:hover,
+ul.pagination li.current a:focus {
+  background: $btn-hover;
+}
+
+.contain-to-grid {
+  background: $header-bg;
+}
+.top-bar {
+  background: transparent;
+}
+.top-bar-section ul {
+  background: transparent;
+}
+.top-bar-section ul li>a {
+  color: $menu-color;
+}
+.top-bar-section ul li:hover:not(.has-form)>a {
+  color: $menu-color;
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: transparent;
+}
+
+.tab-bar {
+  background: $header-bg;
+}
+.tab-bar .menu-icon span {
+  box-shadow: 0 0px 0 1px $menu-color,0 7px 0 1px $menu-color,0 14px 0 1px $menu-color;
+}
+.tab-bar .menu-icon:hover span {
+  box-shadow: 0 0px 0 1px $menu-color,0 7px 0 1px $menu-color,0 14px 0 1px $menu-color;
+}
+.left-small {
+  border-right: solid 1px $mobile-divider;
+}
+
+.left-off-canvas-menu {
+  background: $header-bg;
+}
+ul.off-canvas-list li a {
+  color: $menu-color;
+}
+ul.off-canvas-list li a:hover {
+  background: $menu-hover;
+}
+
+.hero p,
+.hero .home-heading {
+	color: $home-heading;
+}
+
+.single-post-content .entry-title {
+  color: $single-post-heading;
+}
+
+label {
+  color: $body-text;
+}
+
+#footer {
+	background: $footer-bg;
+	color: $footer-color;
+}
+
+@media #{$small-up} { }
+@media #{$small-only} {
+
+}
+
+@media #{$medium-up} {
+	.top-bar-section li.active:not(.has-form) a:not(.button) {
+		background: transparent;
+    color: $menu-color;
+	}
+  .top-bar-section li:not(.has-form) a:not(.button):hover {
+    background: $menu-hover;
+  }
+	.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+		background: $menu-hover;
+	}
+}
+@media #{$medium-only} { }
+
+@media #{$large-up} { }
+@media #{$large-only} { }
+
+@media #{$xlarge-up} { }
+@media #{$xlarge-only} { }
+
+@media #{$xxlarge-up} { }
+@media #{$xxlarge-only} { }
