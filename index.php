@@ -28,7 +28,7 @@
 
       $myposts = get_posts( $args );
       foreach ( $myposts as $post ) : setup_postdata( $post );
-        if ( !in_category('7') ):
+        if ( !in_category('featured') ):
     ?>
         <div class="recent-single-post small-12 medium-4 large-4 columns">
           <?php
@@ -52,7 +52,7 @@
 
       $myposts = get_posts( $args );
       foreach ( $myposts as $post ) : setup_postdata( $post );
-        if ( !in_category('7') ):
+        if ( !in_category('featured') ):
     ?>
         <div class="recent-single-post small-12 medium-4 large-4 columns">
           <?php
