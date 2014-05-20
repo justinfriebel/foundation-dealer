@@ -24,7 +24,8 @@
 	<div class="recent-posts-container rpc-top small-12 medium-12 large-12 row">
     <h3 class="column">Recent posts</h3>
     <?php
-      $args = array( 'posts_per_page' => 3 );
+      $removedCats = get_cat_ID('featured');
+      $args = array( 'posts_per_page' => 3, 'category' => -$removedCats );
 
       $myposts = get_posts( $args );
       foreach ( $myposts as $post ) : setup_postdata( $post );
@@ -47,8 +48,8 @@
 
   <div class="recent-posts-container small-12 medium-12 large-12 row">
     <?php
-      $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-      $args = array( 'posts_per_page' => 3, 'offset' => 3, 'paged' => $paged );
+      $removedCats = get_cat_ID('featured');
+      $args = array( 'posts_per_page' => 3, 'category' => -$removedCats, 'offset' => 3 );
 
       $myposts = get_posts( $args );
       foreach ( $myposts as $post ) : setup_postdata( $post );
