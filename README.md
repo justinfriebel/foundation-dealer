@@ -12,13 +12,17 @@ This is a WordPress dealership blog theme based on Foundation 5 by Zurb and Foun
 
 ## Quickstart
 
+Install WordPress on the server.
+
+On your local machine:
 ```bash
-cd my-wordpress-folder/wp-content/themes/
-git clone git@github.com:justinfriebel/foundation-dealer.git
+cd my-local-folder
+git clone https://github.com/justinfriebel/foundation-dealer.git
 npm install
 bower install
 ```
-Upload the theme folder to the server: wp-content/themes/
+Upload `my-local-folder/foundation-dealer` to the server in the theme directory: `wp-content/themes/`
+
 Activate the theme.
 
 ## WordPress menu settings
@@ -39,7 +43,7 @@ Download and upload the "Categories as headings" plugin, activate it and set it 
 
 ## SCSS updates
 
-While you're working on the SCSS for your project, run:
+While you're working on the SCSS for your project, in the command line, run:
 
 `grunt`
 in the root folder of the theme.
