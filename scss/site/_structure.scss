@@ -95,9 +95,15 @@ input[type="submit"] {
 .home .featured-posts-container {
 	margin: 0;
 }
-.home h2 {
+.home header h2 {
 	line-height: 2rem;
 	padding: 1rem 0;
+}
+.home .entry-content h2 {
+  font-size: 1.5rem;
+}
+.home .entry-content img {
+  display: none;
 }
 .recent-posts-container.row {
   margin: 0 -0.9375rem;
