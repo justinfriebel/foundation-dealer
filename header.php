@@ -75,7 +75,7 @@
             <div class="row">
               <div class="column hero-text-container">
             <h1 class="home-heading small-12"><?php bloginfo('name'); ?></h1>
-            <p class="">Robbins Chevrolet has not become the longest operating Chevrolet dealer in the Houston area all on our own. Our family would like to thank every customer that has trusted us over the last 86 years to complete every job quickly, accurately, and fairly.</p>
+            <p class=""><?php bloginfo('description'); ?></p>
               </div>
             </div>
           </div>
