@@ -18,6 +18,9 @@ On your local machine:
 ```bash
 cd my-local-folder
 git clone https://github.com/justinfriebel/foundation-dealer.git
+cd foundation-dealer
+rm -rf .git
+rm -rf .gitignore
 npm install
 bower install
 ```
@@ -43,7 +46,7 @@ Download and upload the "Categories as headings" plugin, activate it and set it 
 
 ## SCSS updates
 
-While you're working on the SCSS for your project, in the command line, run:
+Before you update the SCSS in your project, in the command line, run:
 
 `grunt`
 in the root folder of the theme.
