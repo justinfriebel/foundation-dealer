@@ -19,12 +19,29 @@ npm install
 bower install
 ```
 
-While you're working on your project, run:
+While you're working on the SCSS for your project, run:
 
 `grunt`
 
-And you're set!
+By leaving grunt running in your CLI, anytime you edit a SCSS file it will automatically compile everything into the app.css file. You can then upload app.css to the webserver via FTP.
 
+You can easily update the header, footer, and link colors in the variables.scss file.
+
+## WordPress menu settings
+
+In the WordPress admin section go to => Appearance => Menus => Menu Settings => check "Right Top Bar". If it's a new blog you'll need to add the menu items yourself. The "Links" section can be used to add links from the menu to the main website.
+
+## Update theme images
+
+Please update the transparent .png logo and homepage background images. The featured post and 6 most recent posts will need featured images setup.
+
+#Featured posts
+
+The featured post displayed on the homepage is the most recent post that has a category of "Featured" with a slug of "featured". Please create this category and select a post with this category to have a post show up on the homepage.
+
+#Install plugins
+
+Download and upload the "Categories as headings" plugin, activate it and set it up in => Appearance => Widgets. You need to drag it from "Available Widgets" to "Sidebar widgets". Please also remove all other widgets from the sidebar except for search.
 
 ## Stylesheet Folder Structure
 
