@@ -14,7 +14,7 @@ This is a WordPress dealership blog theme based on Foundation 5 by Zurb and Foun
 
 Install WordPress on the server.
 
-On your local machine:
+On your local machine command line:
 ```bash
 cd my-local-folder
 git clone https://github.com/justinfriebel/foundation-dealer.git
