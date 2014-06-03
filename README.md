@@ -14,49 +14,43 @@ This is a WordPress dealership blog theme based on Foundation 5 by Zurb and Foun
 
 Install WordPress on the server.
 
-On your local machine command line:
+Download and upload this theme to your themes directory on the server: `wp-content/themes/`.
+
+On your local machine command line (open PowerShell if you're using Windows):
 ```bash
-cd my-local-folder
-git clone https://github.com/justinfriebel/foundation-dealer.git
-cd foundation-dealer
-rm -rf .git
-rm -rf .gitignore
+cd into-where-my-theme-downloaded
 npm install
 bower install
 ```
-Upload `my-local-folder/foundation-dealer` to the server in the theme directory: `wp-content/themes/`
 
 Activate the theme.
 
-## WordPress menu settings
-
-In the WordPress admin section go to => Appearance => Menus => Menu Settings => check "Right Top Bar". If it's a new blog you'll need to add the menu items yourself. The "Links" section can be used to add links from the menu to the main website.
-
 ## Update theme images
-
 Please update the transparent .png logo and homepage background images. The featured post and 6 most recent posts will need featured images setup.
 
-## Featured posts
+## WordPress menu settings
+In the WordPress admin section go to => Appearance => Menus => Menu Settings => check "Right Top Bar". If it's a new blog you'll need to add the menu items yourself. The "Links" section can be used to add links from the menu to the main website.
 
+## Blog title and description
+The blog homepage text can be updated via the WordPress site title and tagline located in => Settings => General.
+
+## Featured posts
 The featured post displayed on the homepage is the most recent post that has a category of "Featured" with a slug of "featured". Please create this category and select a post with this category to have a post show up on the homepage.
 
 ## Install plugins
-
-Download and upload the "Categories as headings" plugin, activate it and set it up in => Appearance => Widgets. You need to drag it from "Available Widgets" to "Sidebar widgets". Please also remove all other widgets from the sidebar except for search.
+Download and upload the [Categories as headings](https://github.com/justinfriebel/categories-as-headings-wordpress-plugin-widget) WordPress plugin to `wp-content/plugins`, activate it and set it up in => Appearance => Widgets. You need to drag it from "Available Widgets" to "Sidebar widgets". Remove all other widgets from the sidebar except for search and drag search to the bottom.
 
 ## SCSS updates
-
 Before you update the SCSS in your project, in the command line, run:
 
 `grunt`
-in the root folder of the theme.
+in the root folder of the project.
 
-By leaving grunt running in your CLI, anytime you edit a SCSS file it will automatically compile everything into the app.css file. You can then upload app.css to the webserver via FTP.
+By leaving grunt running in your CLI, anytime you edit a SCSS file it will automatically compile everything into the app.css file. You can then upload `css/app.css` to the webserver via FTP.
 
-You can easily update the header, footer, and link colors in the variables.scss file.
+You can easily update the header, footer, link colors in the variables.scss file.
 
 ## Stylesheet Folder Structure
-
   * `style.css`: Do not worry about this file. (For some reason) it's required by WordPress. All styling are handled in the Sass files described below
 
   * `scss/app.scss`: Sass imports for global config, foundation and site structure
@@ -70,21 +64,20 @@ You can easily update the header, footer, and link colors in the variables.scss 
   * `css/app.css`: All Sass files are minified and compiled to this file
 
 ## Script Folder Strucutre
-  
   * `bower_components/`: This is the source folder where all Foundation scripts are located. `foundation update` will check and update scripts in this folder
   * `js/`: jQuery, Modernizr and Foundation scripts are copied from `bower_components/` to this directory, where they are minified and concatinated and enqueued in WordPress
   * Please note that you must run `grunt` in your terminal for the scripts to be copied. See [Gruntfile.js](https://github.com/olefredrik/FoundationPress/blob/master/Gruntfile.js) for details
 
-## Update favicons
+## Social buttons
+Remove or add social icons and their links. You can add any missing ones from the [Foundation Icon Fonts 3](http://zurb.com/playground/foundation-icon-fonts-3) collection.
 
+## Update favicons
 New favicons can be created here: http://iconifier.net/. They are located in wp-content/themes/foundation-dealer/assets/img/icons/.
 
 ## How to get started with Foundation
-
 * [Zurb Foundation Docs](http://foundation.zurb.com/docs/)
 
 ## Learn how to use WordPress
-
 * [WordPress Codex](http://codex.wordpress.org/)
 
 ##Check for Foundation Updates? Run:
