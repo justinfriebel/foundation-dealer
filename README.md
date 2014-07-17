@@ -57,7 +57,7 @@ Download and upload the [Categories as headings](https://github.com/justinfriebe
   * `css/app.css`: All Sass files are minified and compiled to this file
 
 ## Updating SCSS and CSS
-**If you are working on a website which is already live, you must download the whole theme to your computer. If you already have the theme on your computer, re-download the SCSS and app.css files so as not to overwrite someone elses changes. This is only needed if you aren't using version control for your website**
+**If you are working on a website which is already live, you must download the whole theme to your computer. If you already have the theme on your computer, re-download the SCSS and app.css files so as not to overwrite someone elses changes. This is only needed if you aren't using version control for your website.**
 
 Before you update the SCSS in your project, in the command line, in the root folder of the theme, run:
 
@@ -68,7 +68,7 @@ By leaving grunt running in your CLI, anytime you edit a SCSS file it will autom
 You can easily update the header, footer, link colors in the variables.scss file.
 
 ## Social buttons
-Remove or add social icons and their links. You can add any missing ones from the [Foundation Icon Fonts 3](http://zurb.com/playground/foundation-icon-fonts-3) collection.
+Remove or add social icons and their links in the footer. You can add any missing ones from the [Foundation Icon Fonts 3](http://zurb.com/playground/foundation-icon-fonts-3) collection.
 
 ## Update favicons
 New favicons can be created here: http://iconifier.net/. They are located in wp-content/themes/foundation-dealer/assets/img/icons/.
