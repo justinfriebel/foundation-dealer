@@ -28,7 +28,7 @@ Activate the theme.
 Please update the transparent .png logo and homepage background images. The featured post and 6 most recent posts will need featured images setup.
 
 ## WordPress menu settings
-In the WordPress admin section go to => Appearance => Menus => Menu Settings => check "Right Top Bar". If it's a new blog you'll need to add the menu items yourself. The "Links" section can be used to add links from the menu to the main website.
+In the WordPress admin section go to => Appearance => Menus => Menu Settings => check "Right Top Bar" and "Mobile". If it's a new blog you'll need to add the menu items yourself. The "Links" section can be used to add links from the menu to the main website.
 
 ## Blog title and description
 The blog homepage text can be updated via the WordPress site title and tagline located in => Settings => General.
