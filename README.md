@@ -13,7 +13,7 @@ This is a WordPress dealership blog theme based on [Foundation 5 by Zurb](http:/
 ## Quickstart
 Install WordPress on the server.
 
-Download and upload this theme to your themes directory on the server: `wp-content/themes/`.
+Download to your local machine.
 
 On your local machine command line (open PowerShell if you're using Windows):
 ```bash
@@ -22,7 +22,7 @@ npm install
 bower install
 ```
 
-Activate the theme.
+Upload the theme to your themes directory on the server: `wp-content/themes/` and activate the theme.
 
 ## Update theme images
 Please update the transparent .png logo and homepage background images. The featured post and 6 most recent posts will need featured images setup.
@@ -63,9 +63,9 @@ Before you update the SCSS in your project, in the command line, in the root fol
 
 `grunt`
 
-By leaving grunt running in your CLI, anytime you edit a SCSS file it will automatically compile everything into the app.css file. You then upload `css/app.css` to the webserver via FTP.
+By leaving grunt running in your CLI, anytime you edit a SCSS file, it will automatically compile everything into the app.css file. You then upload `css/app.css` to the webserver via FTP.
 
-You can easily update the header, footer, link colors in the variables.scss file.
+You can easily update the header, footer, and link colors in the variables.scss file.
 
 ## Social buttons
 Remove or add social icons and their links in the footer. You can add any missing ones from the [Foundation Icon Fonts 3](http://zurb.com/playground/foundation-icon-fonts-3) collection.
